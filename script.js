@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Check localStorage for dark mode preference
     if (localStorage.getItem("dark-mode") === "enabled") {
       body.classList.add("dark-mode")
-      body.style.color = "white";
     }
 
     darkModeToggle.addEventListener("click", function () {
