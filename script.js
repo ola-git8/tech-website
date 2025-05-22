@@ -44,17 +44,17 @@ document.addEventListener("DOMContentLoaded", function () {
         isValid = false;
     }
     if (email === "") {
-        document.getElementById("error-message2").innerHTML += "<br>Email is required.";
+        document.getElementById("error-message3").innerHTML += "<br>Email is required.";
         isValid = false;
     } else if (!email.match(/^\S+@\S+\.\S+$/)) {
-        document.getElementById("error-message2").innerHTML += "<br>Enter a valid email address.";
+        document.getElementById("error-message3").innerHTML += "<br>Enter a valid email address.";
         isValid = false;
     }
     if (password === "") {
-        document.getElementById("error-message2").innerHTML += "<br>Password is required.";
+        document.getElementById("error-message4").innerHTML += "<br>Password is required.";
         isValid = false;
     } else if (password.length < 6) {
-        document.getElementById("error-message2").innerHTML += "<br>Password must be at least 6 characters.";
+        document.getElementById("error-message4").innerHTML += "<br>Password must be at least 6 characters.";
         isValid = false;
     }
 
